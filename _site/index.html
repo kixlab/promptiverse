@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Promptiverse</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="shortcut icon" href="">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+  <!-- <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png"> -->
+  <link rel="manifest" href="/assets/favicon/site.webmanifest">
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+  </head>
+  <base target="_blank">
+  <body>
+    <div>
+      <div class="wrapper">
+        <h1 style="font-family: 'Lato', sans-serif;">
+          
+          <span style="vertical-align:middle; color: #00bad3;"/>Promptiverse</span>
+        </h1>
+        <h4>Scalable Generation of Scaffolding Prompts Through Human-AI Hybrid Knowledge Graph Annotation</h4>
+        <div class="authors-wrapper">
+        
+          <div class="author-container">
+            <div class="author-image">
+              
+                <a href="https://yoonjoolee.com">
+                  <img src="/assets/img/yoonjoo.jpg"/>
+                </a>
+              
+            </div>
+            <p>
+            
+              <a href="https://yoonjoolee.com">
+                Yoonjoo Lee
+              </a>
+            
+            </p>
+            <p>
+              KAIST
+            </p>
+          </div>
+        
+          <div class="author-container">
+            <div class="author-image">
+              
+                <a href="https://johnr0.github.io/">
+                  <img src="/assets/img/john.jpg"/>
+                </a>
+              
+            </div>
+            <p>
+            
+              <a href="https://johnr0.github.io/">
+                John Joon Young Chung
+              </a>
+            
+            </p>
+            <p>
+              University of Michigan
+            </p>
+          </div>
+        
+          <div class="author-container">
+            <div class="author-image">
+              
+                <a href="https://taesookim.com">
+                  <img src="/assets/img/taesoo.jpeg"/>
+                </a>
+              
+            </div>
+            <p>
+            
+              <a href="https://taesookim.com">
+                Tae Soo Kim
+              </a>
+            
+            </p>
+            <p>
+              KAIST
+            </p>
+          </div>
+        
+          <div class="author-container">
+            <div class="author-image">
+              
+                <a href="https://taesookim.com">
+                  <img src="/assets/img/jean.png"/>
+                </a>
+              
+            </div>
+            <p>
+            
+              <a href="https://taesookim.com">
+                Jean Y. Song
+              </a>
+            
+            </p>
+            <p>
+              DGIST
+            </p>
+          </div>
+        
+          <div class="author-container">
+            <div class="author-image">
+              
+                <a href="https://juhokim.com">
+                  <img src="/assets/img/juho.jpg"/>
+                </a>
+              
+            </div>
+            <p>
+            
+              <a href="https://juhokim.com">
+                Juho Kim
+              </a>
+            
+            </p>
+            <p>
+              KAIST
+            </p>
+          </div>
+        
+        </div>
+      </div>
+    </div>
+    <div class="wrapper">
+      <hr/>
+      
+      <div class="video-wrapper">
+        <iframe src="https://www.youtube.com/embed/jvtsD73-Hqw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <hr/>
+      
+      <h2 id="abstract">Abstract</h2>
+<p>Online learners are hugely diverse with varying prior knowledge, but most instructional videos online are created to be one-size-fits-all. Thus, learners may struggle to understand the content by only watching the videos. Providing scaffolding prompts can help learners overcome these struggles through questions and hints that relate different concepts in the videos and elicit meaningful learning. However, serving diverse learners would require a spectrum of scaffolding prompts, which incurs high authoring effort. In this work, we introduce <span style="color:#00bad3">Promptiverse</span>, an approach for generating diverse, multi-turn scaffolding prompts at scale, powered by numerous tra- versal paths over knowledge graphs. To facilitate the construction of the knowledge graphs, we propose a hybrid human-AI annotation tool, <span style="color:#E98F0A"> Grannotate</span>. In our study (N=24), participants produced 40 times more on-par quality prompts with higher diversity, through <span style="color:#00bad3">Promptiverse</span> and <span style="color:#E98F0A"> Grannotate</span>, compared to hand-designed prompts. <span style="color:#00bad3">Promptiverse</span> presents a model for creating diverse and adaptive learning experiences online.</p>
+
+<hr />
+
+<h2 id="process-of-generating-scaffolding-prompts">Process of Generating Scaffolding Prompts</h2>
+
+<p class="sys-img"><img src="/assets/img/teaser_vk.png" alt="Four components: Lecture video, Transcript, Knowledge graph, Scaffolding Prompts" /></p>
+
+<p>With <span style="color:#00bad3">Promptiverse</span>, lecture designers can create a large number of diverse scaffolding prompts by extracting rich knowledge graphs from a video script. These knowledge graphs can be efficiently extracted with the help of <span style="color:#E98F0A"> Grannotate</span>, a human-AI hybrid graph annotation tool. <span style="color:#00bad3">Promptiverse</span> generates scaffolding prompts by traversing knowledge graphs in a way that is guided by the learning patterns of Ausubel’s theory.</p>
+
+<hr />
+
+<h2 id="promptiverse--generating-prompts-with-knowledge-graph"><span style="color:#00bad3">Promptiverse</span> : Generating Prompts with Knowledge Graph</h2>
+
+<p><span style="color:#00bad3">Promptiverse</span> codifies 1) how a single prompt can be generated, 2) how a dyad of prompts can be generated with single prompts while keeping the coherency in prompt content, and 3) how multi-turn prompts can be formulated with dyads of prompts in pedagogically meaningful ways.</p>
+
+<h3 id="generating-a-single-prompt">Generating a Single Prompt</h3>
+
+<p>Based on how knowledge elements are elicited or provided, a single triplet turns into three versions of single prompts.</p>
+
+<p class="sys-img"><img src="/assets/img/single_prompt.png" alt="Each graph for Provide-all, Elicit-entity, and Elicit-relation." /></p>
+
+<p>In <em>provide-all</em> (left), both knowledge entities and the connecting relation are given in the prompt. In <em>elicit-entity</em> (middle), one of the entities is asked while giving the other entity and the relation as hints. <em>Elicit-relation</em> (right) asks about the relation while giving both entities as hints.</p>
+
+<h3 id="generating-a-dyad-of-prompts">Generating a Dyad of Prompts</h3>
+
+<p>For more effective prompting, multiple prompts can be combined into one coherent multi-turn scaffolding prompt. To create such multi-turn prompts, Promptiverse finds two prompts that share an entity, as that entity would bridge the context between the prompts. Another rule is to prevent eliciting already provided or elicited knowledge elements again, as asking about already mentioned information could be pointless.</p>
+
+<p class="sys-img"><img src="/assets/img/dyad.png" alt="Two same graphs for a) Chaining with an entity and b) Not eliciting already shown knowledge." /></p>
+
+<h3 id="generating-educationally-effective-prompts">Generating Educationally Effective Prompts</h3>
+
+<p>To expand dyads of prompts to educationally meaningful prompts, we devised four types of multi-turn scaffolding prompting mechanisms inspired by Ausubel’s theory about <strong>superordinate, correlative, derivative, and combinatorial learning</strong>. Ausbel’s theory proposes that meaningful learning is achieved when the instructional design considers the hierarchical relationships between prior knowledge and new knowledge.</p>
+
+<p class="img-left"><img src="/assets/img/superordinate.png" alt="Three components: Deciduous tree, Maple, and Oak. Scaffolding prompts between lecturer and student." /></p>
+
+<p class="text-right">This is an example of <strong>superordinate prompting</strong>. This type of learning happens when learners first learn subordinate knowledge entities (<em>Maple, Oak</em>) and then relate that to one superordinate entity (<em>Deciduous tree</em>).</p>
+
+<hr />
+
+<h2 id="-grannotate-knowledge-graph-annotation-system"><span style="color:#E98F0A"> Grannotate</span>: Knowledge Graph Annotation System</h2>
+
+<p>To harness <span style="color:#00bad3">Promptiverse</span>’s potential to scalably create prompts, we designed <span style="color:#E98F0A"> Grannotate</span> to support the construction of the underlying knowledge graphs.</p>
+
+<p class="sys-img"><img src="/assets/img/interface-whole.png" alt="Winder next to the design for a screen of a mobile application" /></p>
+
+<p>First, <span style="color:#E98F0A"> Grannotate</span> has two representations of an annotated graph: overlaid on the transcript and a graph visualization. Our tool also shows how prompts would be created out of the annotation. Finally, to alleviate the burden of having many options for entities and relation classes, our tool provides following AI-driven recommendations: 1) entity recom- mendation, 2) relation existence recommendation, and 3) relation class recommendation.</p>
+
+<hr />
+
+<h2 id="results">Results</h2>
+
+<p>To assess if <span style="color:#00bad3">Promptiverse</span> and <span style="color:#E98F0A">Grannotate</span> lead to the scalable generation of diverse scaffolding prompts, we conducted a series of experiments with 24 participants.</p>
+
+<p>First, we compared the quantity and quality of prompts from <span style="color:#00bad3">Promptiverse</span>  with <span style="color:#E98F0A">Grannotate</span> and those created manually. <span style="color:#00bad3">Promptiverse</span>  with <span style="color:#E98F0A">Grannotate</span> generated 40 times more prompts than manual designing while showing similar prompt quality according to the evaluation of two experts. Our approach also generated more diverse prompts including many different entities, relations, and their combinations.</p>
+
+<p>Secondly, we compared the quantity and quality of prompts generated from our approach, when users had or didn’t have AI recommendations. Only the prompts created with recommendations were of comparable quality to manually designed prompts. While no significant difference was found in cognitive load, users with recommendations had a trend of having higher mental demand. As reported in interviews, AI recommendations could lead participants to self-reflect which might have increased the quality of prompts.</p>
+
+<!-- {: .center .quote}
+T2M1: *"The recordings left behind by my group members helped clarify some of the misunderstandings or confusions that I had."*
+
+{: .center .quote}
+T1M2: *"Understanding [my team members] actions and intentions was fun somehow and made me work harder."*
+
+{: .center .quote}
+T5M2: *"With the voice recordings and the feature that showed what the users clicked on as they talked, it was as if we were working together."* -->
+
+<hr />
+
+<h2 id="chi-2022-paper-camera-ready">CHI 2022 Paper (Camera-ready)</h2>
+
+<p><a href="https://kixlab.github.io/website-files/2022/chi2022-promptiverse-paper.pdf">Link to the PDF</a></p>
+
+<!-- [ACM DL Link][2] -->
+
+<h2 id="bibtex">Bibtex</h2>
+<pre>
+@inproceedings{10.1145/3491102.3502087,
+  author = {Lee, Yoonjoo and Chung, John Joon Young and Kim, Tae Soo and Song, Jean Y. and Kim, Juho},
+  title = {Promptiverse: Scalable Generation of Scaffolding Prompts Through Human-AI Hybrid Knowledge Graph Annotation},
+  year = {2022},
+  isbn = {9781450391573},
+  publisher = {Association for Computing Machinery},
+  address = {New Orleans, LA, USA},
+  url = {https://doi.org/10.1145/3491102.3502087},
+  doi = {10.1145/3491102.3502087},
+  booktitle = {Proceedings of the 2022 CHI Conference on Human Factors in Computing Systems},
+  numpages = {18},
+  keywords = {Scaffolding prompt, knowledge graph, human-AI hybrid annotation},
+  location = {New Orleans, LA, USA},
+  series = {CHI '22}
+}
+</pre>
+
+<hr />
+
+<p class="logos"><a href="https://kixlab.org"><img src="/assets/img/kixlab_logo.png" alt="Logo of KIXLAB" /></a>
+<a href="https://kaist.ac.kr"><img src="/assets/img/kaist_logo.png" alt="Logo of KAIST" /></a></p>
+
+<p class="center acknowledgement">This work was supported by the KAIST-NAVER Hypercreative AI Center, IITP grant funded by the Korea government, the DGIST Start-up Fund Program of the Ministry of Science and ICT(2021070007), and the NRF.</p>
+
+<!-- [2]:https://dl.acm.org/doi/10.1145/3411764.3445686 -->
+
+    </div>
+    
+  </body>
+</html>
